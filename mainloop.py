@@ -1,7 +1,7 @@
 import time
-from processInput import processInput
-from update import update
-from render import render
+from src.input.processInput import processInput
+from src.updater.update import update
+from src.renderer.render import render
 
 def mainloop():
     prevTime = time.time()
