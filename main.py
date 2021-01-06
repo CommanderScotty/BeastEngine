@@ -34,11 +34,13 @@ def checkInput():
         actions['moveDown'] = True
     else:
         actions['moveDown'] = False
+    
+    if keys[pygame.K_ESCAPE]:
+        pygame.quit()
 
 
 def update(elapsedTime):
     character.update(elapsedTime, actions)
-    pygame.transform.rotate(character, 45)
 
 
 def render():
